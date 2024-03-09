@@ -91,7 +91,7 @@ internal class Program
 
             int c = a+b;
 
-            Console.WriteLine(c);
+            Console.WriteLine(C);
         }
         catch(Exception ex)
         {
