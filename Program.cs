@@ -2,6 +2,8 @@
 {
     private static void Main(string[] args)
     {
+        /*
+        -------------------------------- Variables and Data Types --------------------------------
         byte byteValue = 255;
         short shortValue = 32767;
         int intValue = 2147483647;
@@ -28,5 +30,9 @@
         Console.WriteLine($"Bool Value: {boolValue}");
         Console.WriteLine($"String Value: {stringValue}");
         Console.WriteLine($"Object Value: {objectValue}");
+        -------------------------------- Variables and Data Types --------------------------------
+        */
+
+        
     }
 }
