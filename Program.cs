@@ -1,4 +1,6 @@
-﻿internal class Program
+﻿using System.Diagnostics;
+
+internal class Program
 {
     private static void Main(string[] args)
     {
@@ -30,9 +32,24 @@
         Console.WriteLine($"Bool Value: {boolValue}");
         Console.WriteLine($"String Value: {stringValue}");
         Console.WriteLine($"Object Value: {objectValue}");
-        -------------------------------- Variables and Data Types --------------------------------
-        */
-
         
+        -------------------------------- Operators --------------------------------
+        int x = 10;
+        Console.WriteLine(x);
+        x += 1;
+        Console.WriteLine(x);
+        x -= 1;
+        Console.WriteLine(x);
+        x *= 2;
+        Console.WriteLine(x);
+        x /= 2;
+        Console.WriteLine(x);
+        Console.WriteLine(true && false);
+        Console.WriteLine(true || false);
+        Console.WriteLine(!true);
+        Console.WriteLine($"{1>2} - {3<2} - {1>=1} - {1<=2} - {1==1} - {2!=1}");
+        Console.WriteLine(1+2-3*4/5%6);
+        Console.WriteLine($"{x++} {x--}");
+        */
     }
 }
