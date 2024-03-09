@@ -79,6 +79,28 @@ internal class Program
         {
             Console.WriteLine($"String is not a valid integer.");
         }
+        
+        //-------------------------------- Try Catch Finally and Logic Errors -------------------------------------
+        try
+        {
+            int a;
+            int.TryParse(Console.ReadLine(),out a);
+
+            int b;
+            int.TryParse(Console.ReadLine(),out b);
+
+            int c = a+b;
+
+            Console.WriteLine(c);
+        }
+        catch(Exception ex)
+        {
+            Console.WriteLine("An error occured: "+ ex.Message);
+        }
+        finally
+        {
+            Console.WriteLine("Process completed.");
+        }
         */
     }
 }
