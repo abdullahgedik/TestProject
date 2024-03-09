@@ -5,7 +5,7 @@ internal class Program
     private static void Main(string[] args)
     {
         /*
-        -------------------------------- Variables and Data Types --------------------------------
+        //-------------------------------- Variables and Data Types --------------------------------
         byte byteValue = 255;
         short shortValue = 32767;
         int intValue = 2147483647;
@@ -33,7 +33,7 @@ internal class Program
         Console.WriteLine($"String Value: {stringValue}");
         Console.WriteLine($"Object Value: {objectValue}");
         
-        -------------------------------- Operators --------------------------------
+        //-------------------------------- Operators -------------------------------------------
         int x = 10;
         Console.WriteLine(x);
         x += 1;
@@ -43,6 +43,7 @@ internal class Program
         x *= 2;
         Console.WriteLine(x);
         x /= 2;
+
         Console.WriteLine(x);
         Console.WriteLine(true && false);
         Console.WriteLine(true || false);
@@ -50,6 +51,34 @@ internal class Program
         Console.WriteLine($"{1>2} - {3<2} - {1>=1} - {1<=2} - {1==1} - {2!=1}");
         Console.WriteLine(1+2-3*4/5%6);
         Console.WriteLine($"{x++} {x--}");
+
+        //-------------------------------- Type Convertions -------------------------------------
+        int numInt = 10;
+        double numDouble = numInt;
+        Console.WriteLine($"Implicit Conversion: {numDouble}");
+
+        double numDouble2 = 15.6;
+        int numInt2 = (int)numDouble2;
+        Console.WriteLine($"Explicit Conversion: {numInt2}");
+
+        string numString = "25";
+        int numInt3 = Convert.ToInt32(numString);
+        Console.WriteLine($"Explicit Conversion with Convert.ToInt32: {numInt3}");
+
+        string numString2 = "30";
+        int numInt4 = int.Parse(numString2);
+        Console.WriteLine($"Explicit Conversion with int.Parse: {numInt4}");
+
+        string numString3 = "35";
+        int numInt5;
+        if (int.TryParse(numString3, out numInt5))
+        {
+            Console.WriteLine($"Explicit Conversion with int.TryParse: {numInt5}");
+        }
+        else
+        {
+            Console.WriteLine($"String is not a valid integer.");
+        }
         */
     }
 }
