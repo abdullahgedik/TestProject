@@ -101,6 +101,26 @@ internal class Program
         {
             Console.WriteLine("Process completed.");
         }
+
+        //-------------------------------- If - Else - Else If -------------------------------------
+
+        bool condition = true;
+        if(condition)
+        {
+            Console.WriteLine(condition);
+        }
+        else
+        {
+            Console.WriteLine(condition);
+        }
+
+        int number = int.Parse(Console.ReadLine());
+        if(number == 1)
+            Console.WriteLine(number);
+        else if(number == 2)
+            Console.WriteLine(number);
+        else
+            Console.WriteLine(number);
         */
     }
 }
